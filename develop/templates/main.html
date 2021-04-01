@@ -1,3 +1,5 @@
+<!-- This is the main file, into which each of the subclass template pages will render -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,25 +10,23 @@
     <title>My Team</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Raleway:wght@300;400&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c502137733.js"></script>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
-            </div>
+<header class="container-fluid">
+    <div class="row">
+        <div class="col-12 jumbotron mb-3 team-heading">
+            <h1>We Are...</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+</header>
+<main class="container">
+    <!-- Content from the subclass.html pages will render here, within this container. -->
                 {{ team }}
-            </div>
-        </div>
-    </div>
+</main>
 </body>
 
 </html>
